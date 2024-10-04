@@ -1,5 +1,5 @@
 import { combineReducers, configureStore, PreloadedStateShapeFromReducersMapObject } from "@reduxjs/toolkit";
-import { counterSlice } from "./test/state/counter";
+import { counterSlice } from "../app/test/state/counter";
 import { setupListeners } from "@reduxjs/toolkit/query";
 
 export interface StoreReducers {
@@ -22,9 +22,14 @@ export const setupStore = (preloadedState?: PreloadedStateShapeFromReducersMapOb
   });
 };
 
-// export default store;
-export const store = setupStore();
-setupListeners(store.dispatch);
+export const makeStore = () => {
+  const store = setupStore();
+  setupListeners(store.dispatch);
+  return store;
+}
+
+// Not in Next.JS!
+// export const store = setupStore();
 export type RootState = ReturnType<typeof rootReducer>;
 export type AppStore = ReturnType<typeof setupStore>;
 export type AppDispatch = typeof store.dispatch;

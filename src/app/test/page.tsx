@@ -2,7 +2,7 @@
 // Because we're inside a server component
 import { useDispatch } from "react-redux";
 import { increment, decrement } from "./state/counter";
-import { useAppSelector } from "../hooks";
+import { useAppSelector } from "@/lib/hooks";
 function CounterComponent() {
   const counter = useAppSelector((state) => state.counter);
   const dispatch = useDispatch();

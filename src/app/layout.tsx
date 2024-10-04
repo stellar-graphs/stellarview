@@ -1,5 +1,5 @@
 "use client";
-import { Provider } from "react-redux";
+// import { Provider } from "react-redux";
 // import type { Metadata } from "next";
 // import localFont from "next/font/local";
 import "./globals.css";
@@ -7,7 +7,7 @@ import "./globals.css";
 import { ny } from "@/lib/utils";
 
 import { Inter as FontSans } from "next/font/google";
-import { store } from "./store";
+import StoreProvider from "./StoreProvider";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -38,7 +38,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={ny(`min-h-screen bg-background font-sans antialiased`, fontSans.variable)}>
-        <Provider store={store}>{children}</Provider>
+        <StoreProvider>{children}</StoreProvider>
+        {/* <Provider store={store}>{children}</Provider> */}
       </body>
     </html>
   );

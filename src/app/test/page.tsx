@@ -1,6 +1,6 @@
 "use client";
 // Because we're inside a server component
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { increment, decrement } from "./state/counter";
 import { useAppSelector } from "../hooks";
 function CounterComponent() {

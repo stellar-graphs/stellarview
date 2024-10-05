@@ -25,7 +25,7 @@ export default function HeroSection() {
         Stellar Graphs is the new way
         <br className="hidden md:block" /> to navigate complex datasets.
       </h1>
-      <p className="animate-fade-in mb-12 -translate-y-4 text-balance text-lg tracking-tight text-gray-400 opacity-0 [--animation-delay:400ms] md:text-xl">
+      <p className="animate-fade-in mb-12 -translate-y-4 text-balance text-lg tracking-tight text-gray-600 dark:text-gray-400 opacity-0 [--animation-delay:400ms] md:text-xl">
         The premiere graph tool for connecting the dots in <br className="hidden md:block" /> scientific datasets related to space
         missions.
       </p>

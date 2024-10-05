@@ -7,11 +7,11 @@ interface HeaderProps {
   setSidebarOpen: (arg0: boolean) => void;
 }
 
-const Header: React.FC<HeaderProps> = (props) => {
+const Header: React.FC<HeaderProps> = (/* props */) => {
   return (
     <header className="sticky top-0 z-50 flex w-full bg-slate-900 drop-shadow-1 dark:bg-boxdark dark:drop-shadow-none">
       <div className="flex flex-grow items-center justify-between px-4 py-4 shadow-2 md:px-6 2xl:px-11">
-        <div className="flex items-center gap-2 sm:gap-4 lg:hidden">
+        {/* <div className="flex items-center gap-2 sm:gap-4 lg:hidden">
           <button
             aria-controls="sidebar"
             onClick={(e) => {
@@ -52,9 +52,9 @@ const Header: React.FC<HeaderProps> = (props) => {
               </span>
             </span>
           </button>
-        </div>
+        </div> */}
 
-        <div className="hidden lg:flex"><StellarNavigationMenu/></div>
+        <div className="flex"/* className="hidden lg:flex" */><StellarNavigationMenu/></div>
         
 
         <DarkModeToggle />

@@ -9,8 +9,8 @@ export async function GET() {
   // })
   // const data = await res.json()
   const data = {
-    hello: "world",
+    bindings: [],
   };
 
-  return Response.json({ data });
+  return Response.json({ ...data });
 }

@@ -1,6 +1,5 @@
 "use client";
-import React, { useState, ReactNode } from "react";
-import Sidebar from "@/components/Sidebar";
+import React, { useState} from "react";
 import Header from "./Header";
 
 

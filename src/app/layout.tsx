@@ -8,6 +8,7 @@ import { ny } from "@/lib/utils";
 
 import { Inter as FontSans } from "next/font/google";
 import StoreProvider from "./StoreProvider";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -38,7 +39,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={ny(`min-h-screen bg-background font-sans antialiased`, fontSans.variable)}>
-        <StoreProvider>{children}</StoreProvider>
+        <StoreProvider>
+        <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >{children}
+          </ThemeProvider>
+          </StoreProvider>
         {/* <Provider store={store}>{children}</Provider> */}
       </body>
     </html>

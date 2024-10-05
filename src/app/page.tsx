@@ -1,3 +1,4 @@
+import DarkModeToggle from "@/components/functional/DarkModeToggle";
 import Image from "next/image";
 
 export default function Home() {
@@ -21,6 +22,8 @@ export default function Home() {
             .
           </li>
           <li>Save and see your changes instantly.</li>
+          <li>Dark mode toggle too</li>
+          <DarkModeToggle/>
         </ol>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">

@@ -1,4 +1,5 @@
-const TerminusClient = require("@terminusdb/terminusdb-client");
+// const TerminusClient = require("@terminusdb/terminusdb-client");
+import TerminusClient from "@terminusdb/terminusdb-client";
 
 const token = process.env.DFRNT_TOKEN;
 const client = new TerminusClient.WOQLClient(process.env.DFRNT_ENDPOINT, {

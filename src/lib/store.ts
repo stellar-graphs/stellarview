@@ -1,13 +1,16 @@
 import { combineReducers, configureStore, PreloadedStateShapeFromReducersMapObject } from "@reduxjs/toolkit";
 import { counterSlice } from "../app/test/state/counter";
 import { setupListeners } from "@reduxjs/toolkit/query";
+import { predicateApi } from "@/app/graph/graphSlice";
 
 export interface StoreReducers {
   counter: typeof counterSlice.reducer;
+  predicateApi: typeof predicateApi.reducer;
 }
 
 const reducers: StoreReducers = {
   counter: counterSlice.reducer,
+  predicateApi: predicateApi.reducer,
 };
 
 const rootReducer = combineReducers(reducers);
@@ -15,9 +18,9 @@ const rootReducer = combineReducers(reducers);
 export const setupStore = (preloadedState?: PreloadedStateShapeFromReducersMapObject<typeof rootReducer>) => {
   return configureStore({
     reducer: rootReducer,
-    // middleware: (getDefaultMiddleware) =>
-    //   getDefaultMiddleware()
-    //     .concat(apiTokenApi.middleware),
+    middleware: (getDefaultMiddleware) =>
+      getDefaultMiddleware()
+        .concat(predicateApi.middleware),
     preloadedState,
   });
 };

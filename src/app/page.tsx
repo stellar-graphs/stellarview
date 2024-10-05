@@ -1,10 +1,19 @@
 import DarkModeToggle from "@/components/functional/DarkModeToggle";
-import Image from "next/image";
+import HeroSection from "@/components/landing/hero-section";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+    // <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+
+    <main className="mx-auto flex-1 overflow-hidden">
+      <HeroSection />
+      <div className="fixed top-0 right-0">
+        <div className="relative p-4">
+          <DarkModeToggle />
+        </div>
+      </div>
+
+      {/* <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <Image
           className="dark:invert"
           src="https://nextjs.org/icons/next.svg"
@@ -98,7 +107,8 @@ export default function Home() {
           />
           Go to nextjs.org →
         </a>
-      </footer>
-    </div>
+        </footer> */}
+      {/* </div> */}
+    </main>
   );
 }

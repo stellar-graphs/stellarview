@@ -14,7 +14,7 @@ export const Predicates: React.FC = () => {
     <>
       Available predicates:
       <pre>
-        {data.map((predicate: string) => (
+        {data?.map((predicate: string) => (
           <div key={predicate} className="w-full">{predicate}</div>
         ))}
       </pre>

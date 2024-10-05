@@ -1,8 +1,15 @@
 import { getTerminusdbClient } from "@/lib/terminusdb";
+import type { NextApiRequest, NextApiResponse } from 'next'
+ 
+type ResponseData = {
+  message: string
+}
+ 
+export default async function handler(
+  req: NextApiRequest,
+  res: NextApiResponse<ResponseData>
+) {
 
-export const dynamic = "force-static";
-
-export async function GET() {
   const { client, /* info, */ WOQL } = await getTerminusdbClient()
 
   client.db("Hackathons");
@@ -16,5 +23,10 @@ export async function GET() {
   const result = await client.query(connectedProperties);
   const data = result.bindings.map((binding:any) => binding.predicate).map((item:string)=> item.replace("@schema:", ""));
 
-  return Response.json(data);
+
+  res.status(200).json(data)
 }
+
+
+// export const dynamic = "force-static";
+

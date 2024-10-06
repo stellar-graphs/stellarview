@@ -38,7 +38,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={ny(`min-h-screen bg-background font-sans antialiased`, fontSans.variable)}>
+      <body className={ny(`min-h-screen w-full scroll-smooth bg-background font-sans antialiased`, fontSans.variable)}>
         <StoreProvider>
         <ThemeProvider
             attribute="class"

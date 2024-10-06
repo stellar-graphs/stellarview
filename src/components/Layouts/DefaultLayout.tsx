@@ -1,6 +1,8 @@
 "use client";
 import React, { useState} from "react";
-import Header from "./Header";
+import Header from "../section/header";
+import Drawer from "../section/drawer";
+// import Header from "./Header";
 
 
 export default function DefaultLayout({
@@ -8,7 +10,7 @@ export default function DefaultLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const [sidebarOpen, setSidebarOpen] = useState(false); // Switch to Redux state
+  // const [sidebarOpen, setSidebarOpen] = useState(false); // Switch to Redux state
 
   return (
     <>
@@ -16,8 +18,8 @@ export default function DefaultLayout({
         {/* <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} /> */}
 
         <div className="relative flex flex-1 flex-col lg:ml-72.5">
-          <Header sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
-
+          <Header  />
+          
           <main>
             <div className="mx-auto max-w-screen-2xl p-4 md:p-6 2xl:p-10">
               {children}

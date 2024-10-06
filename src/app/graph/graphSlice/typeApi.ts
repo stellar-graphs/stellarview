@@ -8,16 +8,13 @@ export const typesApi = createApi({
   baseQuery: fetchBaseQuery({ baseUrl: '/api' }),
   endpoints: (builder) => ({
     getAllTypes: builder.query({
-
       providesTags: result =>{
-
         return result
           ? [
               ...result.map((binding:string) => ({ type: 'types', types: binding })),
               { type: 'types', id: 'LIST' },
             ]
           : [{ type: 'types', id: 'LIST' }]},
-
       query: () => `types`,
     }),
   }),

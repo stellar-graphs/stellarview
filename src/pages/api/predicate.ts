@@ -9,6 +9,7 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<ResponseData>
 ) {
+  if(!(req.method === "GET")) throw new Error("Method not allowed");
 
   const { client, /* info, */ WOQL } = await getTerminusdbClient()
 

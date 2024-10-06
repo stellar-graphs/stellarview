@@ -1,10 +1,17 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { GraphSelectState } from "./types";
+import { GraphLoadingState, GraphSelectState } from "./types";
 
 const initialState: GraphSelectState = {
   predicates: [],
   types: [],
   graphName: "",
+  graphStatus: {
+    status: "UNINITIALIZED",
+  },
+  graph: {
+    edges: [],
+    nodes: [],
+  }
 };
 
 export const graphSelection = createSlice({
@@ -13,6 +20,9 @@ export const graphSelection = createSlice({
   reducers: {
     addPredicate(state: GraphSelectState, action: PayloadAction<string>) {
       state.predicates.push(action.payload);
+    },
+    setGraph(state: GraphSelectState, action: PayloadAction<cytoscape.ElementsDefinition>) {
+      state.graph = action.payload;
     },
     removePredicate(state: GraphSelectState, action: PayloadAction<string>) {
       state.predicates = state.predicates.filter((predicate) => predicate !== action.payload);
@@ -31,6 +41,9 @@ export const graphSelection = createSlice({
     },
     setGraphName(state: GraphSelectState, action: PayloadAction<string>) {
       state.graphName = action.payload;
+    },
+    setGraphStatus(state: GraphSelectState, action: PayloadAction<GraphLoadingState>) {
+      state.graphStatus = action.payload;
     },
   },
 });

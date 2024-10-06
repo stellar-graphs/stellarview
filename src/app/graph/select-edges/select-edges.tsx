@@ -6,17 +6,20 @@ import { useAppDispatch, useAppSelector } from "@/lib/hooks";
 import { useRouter } from "next/navigation";
 import { useGetAllPredicatesQuery } from "../graphSlice/predicateApi";
 import { graphSelectionActions } from "@/lib/store";
+import { loadGraph } from "../graphSlice/actions";
 
 export const SelectTypes: React.FC = () => {
   const router = useRouter();
   const { data, error, isLoading } = useGetAllPredicatesQuery(undefined);
   const currentSelection = useAppSelector((state) => state.graphSelection.predicates);
   const dispatch = useAppDispatch();
+  const types = useAppSelector((state) => state.graphSelection.types);
+  const predicates = useAppSelector((state) => state.graphSelection.predicates);
   return (
     <CardWithChildren
       title="Step 2/3: Edges to include"
       description="Select the type edges to include in the graph"
-      next={() => router.push("/graph/select-starting-point")}
+      next={() => dispatch(loadGraph(types, predicates, () => router.push("/graph/show-relations")))}
       prev={() => router.push("/graph/select-types")}
       nextLabel="Next"
       nextDisabled={currentSelection.length === 0}

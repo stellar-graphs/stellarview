@@ -16,11 +16,11 @@ const terminusdb = {
 export const getTerminusdbClient = async () => {
   if (!terminusdb.connectedClient) {
     terminusdb.info = await client.connect();
-    client.db("NASA_Hackathon");
+    client.db(process.env.DFRNT_DB);
     client.checkout("main");
     terminusdb.connectedClient = client;
   }
-  if(!terminusdb.connectedClient) {
+  if (!terminusdb.connectedClient) {
     throw new Error("Failed to connect to TerminusDB");
   }
   return {

@@ -1,5 +1,3 @@
-import { Icons } from '@/components/ui/icons'
-import { buttonVariants } from '@/components/ui/button'
 import {
    Drawer,
    DrawerContent,
@@ -8,7 +6,6 @@ import {
    DrawerTrigger,
 } from '@/components/ui/drawer'
 import { siteConfig } from '@/lib/config'
-import { cn } from '@/lib/utils'
 import Link from 'next/link'
 import { IoMenuSharp } from 'react-icons/io5'
 import DarkModeToggle from '../functional/DarkModeToggle'

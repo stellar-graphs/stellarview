@@ -1,4 +1,3 @@
-import DarkModeToggle from "@/components/functional/DarkModeToggle";
 import HeroSection from "@/components/landing/hero-section";
 import Header from "@/components/section/header";
 

@@ -1,12 +1,8 @@
 'use client'
 
 import Drawer from '@/components/section/drawer'
-import { Icons } from '@/components/ui/icons'
 import Menu from '@/components/ui/menu'
-import { buttonVariants } from '@/components/ui/button'
-import { siteConfig } from '@/lib/config'
 import { cn } from '@/lib/utils'
-import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import DarkModeToggle from '../functional/DarkModeToggle'
 

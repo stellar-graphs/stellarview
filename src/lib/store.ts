@@ -1,15 +1,18 @@
 import { combineReducers, configureStore, PreloadedStateShapeFromReducersMapObject } from "@reduxjs/toolkit";
 import { counterSlice } from "../app/test/state/counter";
 import { setupListeners } from "@reduxjs/toolkit/query";
-import { predicateApi } from "@/app/graph/graphSlice";
+import { predicateApi } from "@/app/graph/graphSlice/predicateApi";
+import { graphSelection } from "@/app/graph/graphSlice/graphSelectionSlice";
 
 export interface StoreReducers {
   counter: typeof counterSlice.reducer;
   predicateApi: typeof predicateApi.reducer;
+  graphSelection: typeof graphSelection.reducer;
 }
 
 const reducers: StoreReducers = {
   counter: counterSlice.reducer,
+  graphSelection: graphSelection.reducer,
   predicateApi: predicateApi.reducer,
 };
 

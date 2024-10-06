@@ -1,6 +1,6 @@
 "use client";
 
-import { useGetAllPredicatesQuery } from "@/app/graph/graphSlice";
+import { useGetAllPredicatesQuery } from "@/app/graph/graphSlice/predicateApi";
 
 export const Predicates: React.FC = () => {
   const { data, /* error, isLoading */ } = useGetAllPredicatesQuery(undefined);

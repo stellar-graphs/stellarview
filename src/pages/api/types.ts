@@ -12,8 +12,6 @@ export default async function handler(
 
   const { client, /* info, */ WOQL } = await getTerminusdbClient()
 
-  client.db("Hackathons");
-  client.checkout("nasa-biology");
   const connectedProperties = WOQL.distinct("v:type",WOQL.select("v:type", WOQL.and(
     WOQL.triple("v:document", "rdf:type", "v:type"),
     WOQL.not(WOQL.quad("v:type", "sys:subdocument", "v:select", "schema")),

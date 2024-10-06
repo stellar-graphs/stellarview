@@ -16,6 +16,8 @@ const terminusdb = {
 export const getTerminusdbClient = async () => {
   if (!terminusdb.connectedClient) {
     terminusdb.info = await client.connect();
+    client.db("NASA_Hackathon");
+    client.checkout("main");
     terminusdb.connectedClient = client;
   }
   if(!terminusdb.connectedClient) {

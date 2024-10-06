@@ -88,7 +88,7 @@ export const siteConfig = {
          label: 'Home',
       },
       {
-         href: '/graph',
+         href: '/graph/select-types',
          label: 'Graph Navigator',
       },
    ],

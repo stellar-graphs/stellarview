@@ -3,6 +3,8 @@ import { GraphSelectState } from "./types";
 
 const initialState: GraphSelectState = {
   predicates: [],
+  types: [],
+  graphName: "",
 };
 
 export const graphSelection = createSlice({
@@ -17,6 +19,18 @@ export const graphSelection = createSlice({
     },
     resetPredicates(state: GraphSelectState) {
       state.predicates = [];
+    },
+    addType(state: GraphSelectState, action: PayloadAction<string>) {
+      state.types.push(action.payload);
+    },
+    removeType(state: GraphSelectState, action: PayloadAction<string>) {
+      state.types = state.types.filter((predicate) => predicate !== action.payload);
+    },
+    resetTypes(state: GraphSelectState) {
+      state.types = [];
+    },
+    setGraphName(state: GraphSelectState, action: PayloadAction<string>) {
+      state.graphName = action.payload;
     },
   },
 });

@@ -1,6 +1,6 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-Created by [DFRNT]([url](https://dfrnt.com/twinfox-hypergraph-platform/)), this tool is designed to visualize a collaboratively created model-based content graph. The data schema is developed, loaded, and validated using the DFRNT Modeller which can visualze the data as well. The corresponding data, stored within the Modeller, enables the visualization of structured information effectively.
+Created by [DFRNT](https://dfrnt.com/twinfox-hypergraph-platform/), this tool is designed to visualize a collaboratively created model-based content graph. The data schema is developed, loaded, and validated using the DFRNT Modeller which can visualze the data as well. The corresponding data, stored within the Modeller, enables the visualization of structured information effectively.
 
 ## Getting Started
 

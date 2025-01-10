@@ -1,0 +1,608 @@
+[
+    {
+      "@id": "Project/RR-23",
+      "@type": "Project",
+      "description": "Effects of Microgravity on Ocular Vascular Hydrodynamics",
+      "label": "Project - NASA RR-23 - Effects of Microgravity on Ocular Vascular Hydrodynamics",
+      "url": "https://nlsp.nasa.gov/view/lsdapub/lsda_experiment/0c15bea7-9c48-5057-af60-7b5e2be8c36c"
+    },
+    {
+      "@id": "Project/RR-24",
+      "@type": "Project",
+      "description": "In the Rodent Research Reference Mission (RRRM-1), forty female BALB/cAnNTac mice were flown on the International Space Station. To assess differences in outcomes due to age, twenty 10-12 week-old and twenty 32 week-old mice were flown, respectively. To directly assess spaceflight effects, half of the young and old mice (10 old, 10 young) were sacrificed on-orbit after 22-23 days (ISS Terminal, ISS-T), while the other half (10 old, 10 young) were returned live to Earth after 40 days and allowed to recover for 2 days (Live Animal Return, LAR) before sacrifice. Both the ISS-T and LAR animals had independent ground controls (10 mice housed in flight hardware in matched environmental conditions), basal controls (10 mice sacrificed 1 day after launch), and vivarium controls (10 mice housed within standard vivarium habitats). Thus RRRM-1 included a total of 160 mice. This datasets features ribodepleted total RNA-seq data from livers dissected from all groups in RRRM-1. Data from 7-10 livers per group are included. All samples include either Mix 1 or Mix 2 of the ERCC spike-in control.",
+      "label": "Project - NASA RR-8 - Rodent Research-8",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-379"
+    },
+    {
+      "@id": "Study/OSD-379",
+      "@type": "Study",
+      "description": "Transcriptional profiling of livers from mice flown on Rodent Research Reference Mission-1 (RRRM-1)\r\r\r\n",
+      "label": "NASA OSD-379",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-379",
+      "IsPartOf": "Mission/hdVbMmiV9Np6lKGj"
+    },
+    {
+      "@id": "Study/OSD-665",
+      "@type": "Study",
+      "description": "Transcriptional profiling of right extensor digitorum longus muscle from mice flown on the RR-23 mission",
+      "label": "NASA OSD-665",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "IsPartOf": "Mission/wAsFAoAmFZ2UC_rA"
+    },
+    {
+      "@id": "Mission/hdVbMmiV9Np6lKGj",
+      "@type": "Mission",
+      "description": "Transcriptional profiling of livers from mice flown on Rodent Research Reference Mission-1 (RRRM-1)",
+      "label": "Mission - SpaceX-16",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-379",
+      "IsPartOf": "Project/RR-24"
+    },
+    {
+      "@id": "Mission/wAsFAoAmFZ2UC_rA",
+      "@type": "Mission",
+      "description": "Transcriptional profiling of right extensor digitorum longus muscle from mice flown on the RR-23 mission",
+      "label": "Mission - SpaceX-21",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "IsPartOf": "Project/RR-23"
+    },
+    {
+      "@id": "Assay/1ABicL3Y7krrnsIt",
+      "@type": "Assay",
+      "description": "nucleic acid extraction",
+      "label": "Assay - RR8 - transcription profiling - RNA Sequencing (RNA-Seq)",
+      "url": "https://osdr.nasa.gov/geode-py/ws/studies/OSD-379/download?file=GLDS-379_rna-seq_RR8_LVR_BSL_ISS-T_OLD_BI1_R1_raw.fastq.gz&version=1",
+      "IsPartOf": "Mission/hdVbMmiV9Np6lKGj",
+      "Uses": [
+        "Sample/RR8_LVR_BSL_ISS-T_OLD_BI1",
+        "Sample/RR8_LVR_BSL_ISS-T_OLD_BI2",
+        "Sample/RR8_LVR_BSL_ISS-T_OLD_BI3",
+        "Sample/RR8_LVR_BSL_ISS-T_OLD_BI4",
+        "Sample/RR8_LVR_BSL_ISS-T_OLD_BI5",
+        "Sample/RR8_LVR_BSL_ISS-T_OLD_BI6",
+        "Sample/RR8_LVR_BSL_ISS-T_OLD_BI7",
+        "Sample/RR8_LVR_BSL_ISS-T_OLD_BI8",
+        "Sample/RR8_LVR_BSL_ISS-T_OLD_BI9",
+        "Sample/RR8_LVR_BSL_ISS-T_YNG_BI11",
+        "Sample/RR8_LVR_BSL_ISS-T_YNG_BI12",
+        "Sample/RR8_LVR_BSL_ISS-T_YNG_BI13",
+        "Sample/RR8_LVR_BSL_ISS-T_YNG_BI14",
+        "Sample/RR8_LVR_BSL_ISS-T_YNG_BI15",
+        "Sample/RR8_LVR_BSL_ISS-T_YNG_BI16",
+        "Sample/RR8_LVR_BSL_ISS-T_YNG_BI17",
+        "Sample/RR8_LVR_BSL_ISS-T_YNG_BI18",
+        "Sample/RR8_LVR_BSL_ISS-T_YNG_BI19",
+        "Sample/RR8_LVR_BSL_ISS-T_YNG_BI20",
+        "Sample/RR8_LVR_BSL_LAR_YNG_BL1",
+        "Sample/RR8_LVR_BSL_LAR_YNG_BL2",
+        "Sample/RR8_LVR_BSL_LAR_YNG_BL4",
+        "Sample/RR8_LVR_BSL_LAR_YNG_BL5",
+        "Sample/RR8_LVR_BSL_LAR_YNG_BL6",
+        "Sample/RR8_LVR_BSL_LAR_YNG_BL7"
+      ]
+    },
+    {
+      "@id": "Strain/EywCMl5TuqWftRaO",
+      "@type": "Strain",
+      "description": "The house mouse is a small mammal of the order Rodentia, characteristically having a pointed snout, large rounded ears, and a long and almost hairless tail. It is one of the most abundant species of the genus Mus.",
+      "label": "Strain - BALB/cAnNTac",
+      "url": "http://purl.bioontology.org/ontology/NCBITAXON/10090"
+    },
+    {
+      "@id": "Sample/pGdRMN0dSagwdUmZ",
+      "@type": "Sample",
+      "description": "BL_ISS_01",
+      "label": "Sample - RR8_LVR_BSL_ISS-T_OLD_BI1",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-379",
+      "Uses": "Strain/EywCMl5TuqWftRaO"
+    },
+    {
+      "@id": "Strain/10d4sE-3rHIXFxil",
+      "@type": "Strain",
+      "description": "Jackson Laboratory - The house mouse is a small mammal of the order Rodentia, characteristically having a pointed snout, large rounded ears, and a long and almost hairless tail. It is one of the most abundant species of the genus Mus.",
+      "label": "Strain - C57BL/6J",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665"
+    },
+    {
+      "@id": "Sample/B_pkc09FioqD5CTr",
+      "@type": "Sample",
+      "description": "RR-23_F1",
+      "label": "Sample - RR23_R-EDL_FLT_F1_techrep1",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/10d4sE-3rHIXFxil"
+    },
+    {
+      "@id": "Assay/gGAmsFvGUX4Mupfs",
+      "@type": "Assay",
+      "label": "Assay - RR23 - transcription profiling - RNA Sequencing (RNA-Seq)",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "IsPartOf": "Mission/wAsFAoAmFZ2UC_rA",
+      "Uses": [
+        "Sample/RR23_R-EDL_FLT_F1_techrep1",
+        "Sample/RR23_R-EDL_FLT_F1_techrep2",
+        "Sample/RR23_R-EDL_FLT_F2",
+        "Sample/RR23_R-EDL_FLT_F3",
+        "Sample/RR23_R-EDL_FLT_F4",
+        "Sample/RR23_R-EDL_FLT_F5",
+        "Sample/RR23_R-EDL_FLT_F6",
+        "Sample/RR23_R-EDL_FLT_F7",
+        "Sample/RR23_R-EDL_FLT_F8",
+        "Sample/RR23_R-EDL_FLT_F9",
+        "Sample/RR23_R-EDL_GC_G1_techrep1",
+        "Sample/RR23_R-EDL_GC_G1_techrep2",
+        "Sample/RR23_R-EDL_GC_G2",
+        "Sample/RR23_R-EDL_GC_G3",
+        "Sample/RR23_R-EDL_GC_G4",
+        "Sample/RR23_R-EDL_GC_G5",
+        "Sample/RR23_R-EDL_GC_G6",
+        "Sample/RR23_R-EDL_GC_G7",
+        "Sample/RR23_R-EDL_GC_G8",
+        "Sample/RR23_R-EDL_GC_G9",
+        "Sample/RR23_R-EDL_VIV_V1_techrep1",
+        "Sample/RR23_R-EDL_VIV_V1_techrep2",
+        "Sample/RR23_R-EDL_VIV_V2",
+        "Sample/RR23_R-EDL_VIV_V3",
+        "Sample/RR23_R-EDL_VIV_V4",
+        "Sample/RR23_R-EDL_VIV_V5",
+        "Sample/RR23_R-EDL_VIV_V6",
+        "Sample/RR23_R-EDL_VIV_V7",
+        "Sample/RR23_R-EDL_VIV_V8",
+        "Sample/RR23_R-EDL_VIV_V9"
+      ],
+      "Includes": "LibraryBatch/LIB-BATCH-034"
+    },
+    {
+      "@id": "Sample/KQgt52dBQ8vLhYNy",
+      "@type": "Sample",
+      "description": "BL_ISS_02",
+      "label": "Sample - RR8_LVR_BSL_ISS-T_OLD_BI2",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-379",
+      "Uses": "Strain/EywCMl5TuqWftRaO"
+    },
+    {
+      "@id": "Sample/RR23_R-EDL_FLT_F1_techrep1",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR23_R-EDL_FLT_F1_techrep1",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/10d4sE-3rHIXFxil"
+    },
+    {
+      "@id": "Sample/RR23_R-EDL_FLT_F1_techrep2",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR23_R-EDL_FLT_F1_techrep2",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/10d4sE-3rHIXFxil"
+    },
+    {
+      "@id": "Sample/RR23_R-EDL_FLT_F2",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR23_R-EDL_FLT_F2",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/10d4sE-3rHIXFxil"
+    },
+    {
+      "@id": "Sample/RR23_R-EDL_FLT_F3",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR23_R-EDL_FLT_F3",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/10d4sE-3rHIXFxil"
+    },
+    {
+      "@id": "Sample/RR23_R-EDL_FLT_F4",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR23_R-EDL_FLT_F4",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/10d4sE-3rHIXFxil"
+    },
+    {
+      "@id": "Sample/RR23_R-EDL_FLT_F5",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR23_R-EDL_FLT_F5",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/10d4sE-3rHIXFxil"
+    },
+    {
+      "@id": "Sample/RR23_R-EDL_FLT_F6",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR23_R-EDL_FLT_F6",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/10d4sE-3rHIXFxil"
+    },
+    {
+      "@id": "Sample/RR23_R-EDL_FLT_F7",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR23_R-EDL_FLT_F7",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/10d4sE-3rHIXFxil"
+    },
+    {
+      "@id": "Sample/RR23_R-EDL_FLT_F8",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR23_R-EDL_FLT_F8",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/10d4sE-3rHIXFxil"
+    },
+    {
+      "@id": "Sample/RR23_R-EDL_FLT_F9",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR23_R-EDL_FLT_F9",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/10d4sE-3rHIXFxil"
+    },
+    {
+      "@id": "Sample/RR23_R-EDL_GC_G1_techrep1",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR23_R-EDL_GC_G1_techrep1",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/10d4sE-3rHIXFxil"
+    },
+    {
+      "@id": "Sample/RR23_R-EDL_GC_G1_techrep2",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR23_R-EDL_GC_G1_techrep2",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/10d4sE-3rHIXFxil"
+    },
+    {
+      "@id": "Sample/RR23_R-EDL_GC_G2",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR23_R-EDL_GC_G2",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/10d4sE-3rHIXFxil"
+    },
+    {
+      "@id": "Sample/RR23_R-EDL_GC_G3",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR23_R-EDL_GC_G3",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/10d4sE-3rHIXFxil"
+    },
+    {
+      "@id": "Sample/RR23_R-EDL_GC_G4",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR23_R-EDL_GC_G4",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/10d4sE-3rHIXFxil"
+    },
+    {
+      "@id": "Sample/RR23_R-EDL_GC_G5",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR23_R-EDL_GC_G5",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/10d4sE-3rHIXFxil"
+    },
+    {
+      "@id": "Sample/RR23_R-EDL_GC_G6",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR23_R-EDL_GC_G6",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/10d4sE-3rHIXFxil"
+    },
+    {
+      "@id": "Sample/RR23_R-EDL_GC_G7",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR23_R-EDL_GC_G7",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/10d4sE-3rHIXFxil"
+    },
+    {
+      "@id": "Sample/RR23_R-EDL_GC_G8",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR23_R-EDL_GC_G8",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/10d4sE-3rHIXFxil"
+    },
+    {
+      "@id": "Sample/RR23_R-EDL_GC_G9",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR23_R-EDL_GC_G9",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/10d4sE-3rHIXFxil"
+    },
+    {
+      "@id": "Sample/RR23_R-EDL_VIV_V1_techrep1",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR23_R-EDL_VIV_V1_techrep1",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/10d4sE-3rHIXFxil"
+    },
+    {
+      "@id": "Sample/RR23_R-EDL_VIV_V1_techrep2",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR23_R-EDL_VIV_V1_techrep2",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/10d4sE-3rHIXFxil"
+    },
+    {
+      "@id": "Sample/RR23_R-EDL_VIV_V2",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR23_R-EDL_VIV_V2",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/10d4sE-3rHIXFxil"
+    },
+    {
+      "@id": "Sample/RR23_R-EDL_VIV_V3",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR23_R-EDL_VIV_V3",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/10d4sE-3rHIXFxil"
+    },
+    {
+      "@id": "Sample/RR23_R-EDL_VIV_V4",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR23_R-EDL_VIV_V4",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/10d4sE-3rHIXFxil"
+    },
+    {
+      "@id": "Sample/RR23_R-EDL_VIV_V5",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR23_R-EDL_VIV_V5",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/10d4sE-3rHIXFxil"
+    },
+    {
+      "@id": "Sample/RR23_R-EDL_VIV_V6",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR23_R-EDL_VIV_V6",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/10d4sE-3rHIXFxil"
+    },
+    {
+      "@id": "Sample/RR23_R-EDL_VIV_V7",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR23_R-EDL_VIV_V7",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/10d4sE-3rHIXFxil"
+    },
+    {
+      "@id": "Sample/RR23_R-EDL_VIV_V8",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR23_R-EDL_VIV_V8",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/10d4sE-3rHIXFxil"
+    },
+    {
+      "@id": "Sample/RR23_R-EDL_VIV_V9",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR23_R-EDL_VIV_V9",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/10d4sE-3rHIXFxil"
+    },
+    {
+      "@id": "Sample/RR8_LVR_BSL_ISS-T_OLD_BI1",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR8_LVR_BSL_ISS-T_OLD_BI1",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-379",
+      "Uses": "Strain/EywCMl5TuqWftRaO"
+    },
+    {
+      "@id": "Sample/RR8_LVR_BSL_ISS-T_OLD_BI2",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR8_LVR_BSL_ISS-T_OLD_BI2",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/EywCMl5TuqWftRaO"
+    },
+    {
+      "@id": "Sample/RR8_LVR_BSL_ISS-T_OLD_BI3",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR8_LVR_BSL_ISS-T_OLD_BI3",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/EywCMl5TuqWftRaO"
+    },
+    {
+      "@id": "Sample/RR8_LVR_BSL_ISS-T_OLD_BI4",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR8_LVR_BSL_ISS-T_OLD_BI4",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/EywCMl5TuqWftRaO"
+    },
+    {
+      "@id": "Sample/RR8_LVR_BSL_ISS-T_OLD_BI5",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR8_LVR_BSL_ISS-T_OLD_BI5",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/EywCMl5TuqWftRaO"
+    },
+    {
+      "@id": "Sample/RR8_LVR_BSL_ISS-T_OLD_BI6",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR8_LVR_BSL_ISS-T_OLD_BI6",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/EywCMl5TuqWftRaO"
+    },
+    {
+      "@id": "Sample/RR8_LVR_BSL_ISS-T_OLD_BI7",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR8_LVR_BSL_ISS-T_OLD_BI7",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/EywCMl5TuqWftRaO"
+    },
+    {
+      "@id": "Sample/RR8_LVR_BSL_ISS-T_OLD_BI8",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR8_LVR_BSL_ISS-T_OLD_BI8",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/EywCMl5TuqWftRaO"
+    },
+    {
+      "@id": "Sample/RR8_LVR_BSL_ISS-T_OLD_BI9",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR8_LVR_BSL_ISS-T_OLD_BI9",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/EywCMl5TuqWftRaO"
+    },
+    {
+      "@id": "Sample/RR8_LVR_BSL_ISS-T_YNG_BI11",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR8_LVR_BSL_ISS-T_YNG_BI11",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/EywCMl5TuqWftRaO"
+    },
+    {
+      "@id": "Sample/RR8_LVR_BSL_ISS-T_YNG_BI12",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR8_LVR_BSL_ISS-T_YNG_BI12",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/EywCMl5TuqWftRaO"
+    },
+    {
+      "@id": "Sample/RR8_LVR_BSL_ISS-T_YNG_BI13",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR8_LVR_BSL_ISS-T_YNG_BI13",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/EywCMl5TuqWftRaO"
+    },
+    {
+      "@id": "Sample/RR8_LVR_BSL_ISS-T_YNG_BI14",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR8_LVR_BSL_ISS-T_YNG_BI14",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/EywCMl5TuqWftRaO"
+    },
+    {
+      "@id": "Sample/RR8_LVR_BSL_ISS-T_YNG_BI15",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR8_LVR_BSL_ISS-T_YNG_BI15",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/EywCMl5TuqWftRaO"
+    },
+    {
+      "@id": "Sample/RR8_LVR_BSL_ISS-T_YNG_BI16",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR8_LVR_BSL_ISS-T_YNG_BI16",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/EywCMl5TuqWftRaO"
+    },
+    {
+      "@id": "Sample/RR8_LVR_BSL_ISS-T_YNG_BI17",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR8_LVR_BSL_ISS-T_YNG_BI17",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/EywCMl5TuqWftRaO"
+    },
+    {
+      "@id": "Sample/RR8_LVR_BSL_ISS-T_YNG_BI18",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR8_LVR_BSL_ISS-T_YNG_BI18",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/EywCMl5TuqWftRaO"
+    },
+    {
+      "@id": "Sample/RR8_LVR_BSL_ISS-T_YNG_BI19",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR8_LVR_BSL_ISS-T_YNG_BI19",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/EywCMl5TuqWftRaO"
+    },
+    {
+      "@id": "Sample/RR8_LVR_BSL_ISS-T_YNG_BI20",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR8_LVR_BSL_ISS-T_YNG_BI20",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/EywCMl5TuqWftRaO"
+    },
+    {
+      "@id": "Sample/RR8_LVR_BSL_LAR_YNG_BL1",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR8_LVR_BSL_LAR_YNG_BL1",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/EywCMl5TuqWftRaO"
+    },
+    {
+      "@id": "Sample/RR8_LVR_BSL_LAR_YNG_BL2",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR8_LVR_BSL_LAR_YNG_BL2",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/EywCMl5TuqWftRaO"
+    },
+    {
+      "@id": "Sample/RR8_LVR_BSL_LAR_YNG_BL4",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR8_LVR_BSL_LAR_YNG_BL4",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/EywCMl5TuqWftRaO"
+    },
+    {
+      "@id": "Sample/RR8_LVR_BSL_LAR_YNG_BL5",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR8_LVR_BSL_LAR_YNG_BL5",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/EywCMl5TuqWftRaO"
+    },
+    {
+      "@id": "Sample/RR8_LVR_BSL_LAR_YNG_BL6",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR8_LVR_BSL_LAR_YNG_BL6",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/EywCMl5TuqWftRaO"
+    },
+    {
+      "@id": "Sample/RR8_LVR_BSL_LAR_YNG_BL7",
+      "@type": "Sample",
+      "description": "Mus musculus",
+      "label": "Sample - RR8_LVR_BSL_LAR_YNG_BL7",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665",
+      "Uses": "Strain/EywCMl5TuqWftRaO"
+    },
+    {
+      "@id": "LibraryBatch/LIB-BATCH-034",
+      "@type": "LibraryBatch",
+      "description": "Parameter Value: Library Batch Number",
+      "label": "Library Batch - LIB-BATCH-034",
+      "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-665"
+    }
+  ]
